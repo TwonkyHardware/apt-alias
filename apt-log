@@ -1,6 +1,6 @@
 #!/bin/bash
 
-logFile=~/.apt.log
+logFile=/home/$SUDO_USER/.apt.log
 orig=apt-get
 
 # Prep the log file.  If it doesn't exist, create it.
