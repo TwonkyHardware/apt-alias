@@ -1,6 +1,6 @@
 # apt-alias
 
-`apt-alias` is a "man-in-the-middle" script to intercept `apt` and `apt-get` commands.  The script logs all
+`apt-log` is a "man-in-the-middle" script to intercept `apt` and `apt-get` commands.  The script logs all
 install, remove, and purge commands before continuing with them, which provides a convenient logfile 
 summary of which packages users have actively installed or removed over the life of the installation.
 
