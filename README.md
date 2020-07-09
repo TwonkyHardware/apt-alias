@@ -25,7 +25,7 @@ To implement:
     
     The `sudo` alias adds a space to the end of any use of `sudo`.  Since the other two aliases are in 
     your $HOME folder, but you have to call `apt` and `apt-get` as the super user (that is, 
-    `sudo apt install ...`), the extra space prompts the shell to see if the argument following `sudo ` is 
+    `$ sudo apt install ...`), the extra space prompts the shell to see if the argument following `sudo ` is 
     also an alias in the calling user's `~/.bash_aliases`.  This will not affect your normal use of `sudo`.
 
 2) Create scripts
@@ -37,7 +37,9 @@ To implement:
     $ touch ~/bin/apt-log
     ```
     
-    If there is no `bin/` directory in your home folder, you can safely create it (`$ mkdir ~/bin`).
+    If there is no `bin/` directory in your home folder, you can safely create it (`$ mkdir ~/bin`).  It will
+    automatically be added to your `$PATH` for future shell sessions; to do so for the current session, source
+    your Bash profile: `$ source ~/.profile`.
     
     Using your preferred editor, copy the contents of `apt-alias` into the new files.
 
